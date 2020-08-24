@@ -18,6 +18,25 @@ public class ArrayUtils {
         }
     }
 
+    public static void outputArr(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+        }
+    }
+
+    public static void outputArrs(int[][] arr) {
+        System.out.print("[");
+        for (int i = 0; i < arr.length; i++) {
+            int[] vals = arr[i];
+            System.out.print("[");
+            for (int j = 0; j < vals.length; j++) {
+                System.out.print(vals[j]+",");
+            }
+            System.out.print("],");
+        }
+        System.out.print("]");
+    }
+
     /**
      * <p>功能描述：swap 交换位置</p>
      * <ul>
